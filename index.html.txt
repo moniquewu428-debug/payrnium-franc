@@ -1,0 +1,415 @@
+<html lang="pt-br"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <meta name="description" content="Almeida &amp; Lemos - Agência especializada em intermediação de negócios e serviços. Conectamos empresas e soluções em São José dos Campos/SP. CNAE 74.90-1-04.">
+    <meta name="keywords" content="intermediação de negócios, agenciamento de serviços, conexão empresarial, B2B, São José dos Campos, parcerias comerciais">
+    <meta name="author" content="Almeida &amp; Lemos Agenciamento e Negocios LTDA">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://tonyvmei.infinityfree.me/">
+    <meta name="google-site-verification" content="INSIRA_SEU_CODIGO_DE_VERIFICACAO_AQUI">
+    
+    <title>Almeida &amp; Lemos | Intermediação de Negócios e Serviços | São José dos Campos</title>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #1e2a3e;
+            background-color: #f5f7fa;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            background: #0d2b3e;
+            color: white;
+            padding: 1.2rem 0;
+            border-bottom: 3px solid #e8a735;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-flex {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .logo h1 {
+            font-size: 1.5rem;
+            letter-spacing: 1px;
+        }
+
+        .logo p {
+            font-size: 0.75rem;
+            color: #e8a735;
+        }
+
+        .badge-cnae {
+            background: #1e4a6e;
+            padding: 0.4rem 1rem;
+            border-radius: 30px;
+            font-size: 0.75rem;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 1.8rem;
+            list-style: none;
+            flex-wrap: wrap;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #e8a735;
+        }
+
+        /* Hero com imagem de negócios/parcerias */
+        .hero {
+            background: linear-gradient(rgba(13,43,62,0.75), rgba(13,43,62,0.75)), url('https://images.unsplash.com/photo-1556761175-5973dc0f32e7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+            padding: 5rem 0;
+            text-align: center;
+            color: white;
+        }
+
+        .hero h2 {
+            font-size: 2.8rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 1.5rem;
+        }
+
+        .btn-contato {
+            display: inline-block;
+            background: #e8a735;
+            color: #0d2b3e;
+            padding: 12px 32px;
+            border-radius: 40px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn-contato:hover {
+            background: #d49a2a;
+            transform: scale(1.02);
+        }
+
+        /* Seções */
+        section {
+            padding: 70px 0;
+            border-bottom: 1px solid #e0e6ed;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 2.5rem;
+            color: #0d2b3e;
+        }
+
+        .section-title:after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 3px;
+            background: #e8a735;
+            margin: 0.6rem auto 0;
+            border-radius: 2px;
+        }
+
+        /* Grid de serviços de intermediação */
+        .servicos-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .servico-card {
+            background: white;
+            padding: 2rem 1.5rem;
+            border-radius: 16px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+            text-align: center;
+            transition: 0.3s;
+            border-bottom: 3px solid transparent;
+        }
+
+        .servico-card:hover {
+            border-bottom-color: #e8a735;
+            transform: translateY(-5px);
+        }
+
+        .servico-card .emoji {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .servico-card h3 {
+            margin-bottom: 1rem;
+            color: #0d2b3e;
+        }
+
+        /* Sobre */
+        .sobre-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .sobre-texto {
+            flex: 1.5;
+        }
+
+        .sobre-imagem {
+            flex: 1;
+        }
+
+        .sobre-imagem img {
+            width: 100%;
+            border-radius: 16px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+        }
+
+        .dados-empresa {
+            background: #eef2f7;
+            padding: 1.5rem;
+            border-radius: 12px;
+            margin-top: 1.5rem;
+        }
+
+        .dados-empresa p {
+            margin-bottom: 0.5rem;
+        }
+
+        /* Contato */
+        .contato-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .contato-card {
+            background: white;
+            padding: 1.8rem;
+            border-radius: 16px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+
+        .contato-card p {
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .contato-card strong {
+            min-width: 110px;
+            color: #0d2b3e;
+        }
+
+        .map-link {
+            margin-top: 1rem;
+            display: inline-block;
+            color: #e8a735;
+            font-weight: bold;
+        }
+
+        /* Privacidade */
+        .privacidade-box {
+            background: white;
+            padding: 2rem;
+            border-radius: 16px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+
+        footer {
+            background: #0d2b3e;
+            color: #aaa;
+            text-align: center;
+            padding: 2rem;
+            font-size: 0.85rem;
+        }
+
+        footer a {
+            color: #e8a735;
+            text-decoration: none;
+        }
+
+        @media (max-width: 768px) {
+            .hero h2 { font-size: 1.8rem; }
+            .header-flex { flex-direction: column; text-align: center; }
+            .nav-links { justify-content: center; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <div class="header-flex">
+            <div class="logo">
+                <h1>Almeida &amp; Lemos</h1>
+                <p>Agenciamento e Negócios LTDA</p>
+            </div>
+            <div class="badge-cnae">
+                📋 CNAE: 74.90-1-04 | Intermediação e Agenciamento
+            </div>
+            <ul class="nav-links">
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#sobre">A Empresa</a></li>
+                <li><a href="#privacidade">Privacidade</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+
+<main>
+    <!-- Hero -->
+    <div class="hero">
+        <div class="container">
+            <h2>Conectamos negócios e oportunidades</h2>
+            <p>Especialistas em intermediação e agenciamento de serviços e negócios em geral. Soluções B2B para empresas que buscam crescer.</p>
+            <a href="#contato" class="btn-contato">Fale com nossa equipe →</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- Serviços de Intermediação (foco no CNAE) -->
+        <section id="servicos">
+            <h2 class="section-title">Nossos Serviços de Intermediação</h2>
+            <div class="servicos-grid">
+                <div class="servico-card">
+                    <div class="emoji">🤝</div>
+                    <h3>Intermediação Comercial</h3>
+                    <p>Conectamos fornecedores e compradores, facilitando acordos comerciais e parcerias estratégicas entre empresas.</p>
+                </div>
+                <div class="servico-card">
+                    <div class="emoji">📊</div>
+                    <h3>Agenciamento de Serviços</h3>
+                    <p>Representação comercial e agenciamento de prestadores de serviço para empresas de diversos segmentos.</p>
+                </div>
+                <div class="servico-card">
+                    <div class="emoji">🏢</div>
+                    <h3>Negociação B2B</h3>
+                    <p>Atuamos na mediação de contratos e acordos entre pessoas jurídicas, garantindo segurança e transparência.</p>
+                </div>
+                <div class="servico-card">
+                    <div class="emoji">📝</div>
+                    <h3>Consultoria em Parcerias</h3>
+                    <p>Identificamos oportunidades de negócio e auxiliamos na formalização de parcerias comerciais.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sobre a empresa -->
+        <section id="sobre">
+            <h2 class="section-title">Sobre a Almeida &amp; Lemos</h2>
+            <div class="sobre-grid">
+                <div class="sobre-texto">
+                    <p>A <strong>Almeida &amp; Lemos Agenciamento e Negocios LTDA</strong> foi fundada em <strong>23 de setembro de 2020</strong> na cidade de <strong>São José dos Campos/SP</strong>. Desde então, atuamos como ponte entre empresas que buscam soluções e prestadores de serviços qualificados.</p>
+                    <p style="margin-top: 1rem;">Nossa especialidade é a <strong>intermediação de negócios e agenciamento de serviços em geral</strong>, excluindo atividades imobiliárias. Trabalhamos com ética, transparência e compromisso com resultados.</p>
+                    
+                    <div class="dados-empresa">
+                        <p><strong>📌 CNPJ:</strong> 38.714.435/0001-70</p>
+                        <p><strong>🏢 Atividade principal:</strong> 74.90-1-04 - Atividades de intermediação e agenciamento de serviços e negócios em geral, exceto imobiliários</p>
+                        <p><strong>📅 Data de fundação:</strong> 23/09/2020</p>
+                        <p><strong>📍 Sede:</strong> São José dos Campos - São Paulo</p>
+                    </div>
+                </div>
+                <div class="sobre-imagem">
+                    <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-4.0.3&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Reunião de negócios e parcerias">
+                </div>
+            </div>
+        </section>
+
+        <!-- Política de Privacidade (exigência G2RS) -->
+        <section id="privacidade">
+            <h2 class="section-title">Política de Privacidade</h2>
+            <div class="privacidade-box">
+                <p>A <strong>Almeida &amp; Lemos Agenciamento e Negocios LTDA</strong> valoriza a transparência e a proteção dos dados pessoais. Esta política descreve como tratamos as informações de nossos clientes e parceiros.</p>
+                
+                <h3 style="margin: 1.2rem 0 0.5rem;">📌 Quais dados coletamos?</h3>
+                <p>Coletamos nome, telefone, e-mail, empresa e mensagem enviada voluntariamente através do nosso site ou canais de contato. Apenas informações necessárias para estabelecer intermediação comercial.</p>
+                
+                <h3 style="margin: 1.2rem 0 0.5rem;">🔐 Como utilizamos seus dados?</h3>
+                <p>Seus dados são utilizados exclusivamente para responder solicitações, viabilizar negociações e comunicar oportunidades de negócio. Não compartilhamos dados com terceiros sem autorização.</p>
+                
+                <h3 style="margin: 1.2rem 0 0.5rem;">📧 Seus direitos (LGPD)</h3>
+                <p>Você pode solicitar correção, exclusão ou portabilidade de seus dados a qualquer momento através do e-mail de contato abaixo.</p>
+                
+                <p style="margin-top: 1.2rem; font-size: 0.85rem;">Última atualização: Junho/2026 | Em conformidade com a Lei Geral de Proteção de Dados (Lei 13.709/2018).</p>
+            </div>
+        </section>
+
+        <!-- Contato completo -->
+        <section id="contato">
+            <h2 class="section-title">Contato e Localização</h2>
+            <div class="contato-grid">
+                <div class="contato-card">
+                    <h3 style="margin-bottom: 1rem;">📬 Informações de Contato</h3>
+                    <p><strong>📧 E-mail:</strong> <a href="mailto:eliani@contarhcontabilidade.com.br">eliani@contarhcontabilidade.com.br</a> (Enviar e-mail)</p>
+                    <p><strong>📞 Telefone:</strong> <a href="tel:+551233089470">(12) 3308-9470</a> (Ligar)</p>
+                    <p><strong>📍 Endereço:</strong> Avenida Doutor Nelson D'avila, 1730 - Jardim Sao Dimas</p>
+                    <p><strong>🏙️ Bairro:</strong> Jardim Sao Dimas</p>
+                    <p><strong>🗺️ CEP:</strong> 12245-030</p>
+                    <p><strong>📍 Município:</strong> São José dos Campos - SP</p>
+                    <a href="https://www.google.com/maps/search/?api=1&amp;query=Avenida+Doutor+Nelson+D%27avila+1730+São+José+dos+Campos" target="_blank" class="map-link">🗺️ Ver localização no Google Maps →</a>
+                </div>
+                <div class="contato-card">
+                    <h3 style="margin-bottom: 1rem;">📬 Para Correspondência</h3>
+                    <p><strong>Almeida &amp; Lemos Agenciamento e Negocios LTDA</strong></p>
+                    <p>Avenida Doutor Nelson D'avila, 1730<br>
+                    Jardim Sao Dimas<br>
+                    São José dos Campos - SP<br>
+                    CEP: 12245-030</p>
+                    <hr style="margin: 1rem 0;">
+                    <p><strong>🕒 Horário de atendimento:</strong><br>
+                    Segunda a Sexta: 9h às 18h</p>
+                    <p style="margin-top: 1rem;"><a href="https://www.tonyveiculos.com.br/" target="_blank" style="color: #0d2b3e; font-weight: bold;">🚗 Parceiro: Tony Veículos →</a></p>
+                </div>
+            </div>
+        </section>
+    </div>
+</main>
+
+<footer>
+    <div class="container">
+        <p>Almeida &amp; Lemos Agenciamento e Negocios LTDA | CNPJ: 38.714.435/0001-70</p>
+        <p>CNAE: 74.90-1-04 - Intermediação e agenciamento de serviços e negócios em geral, exceto imobiliários</p>
+        <p>Avenida Doutor Nelson D'avila, 1730 - Jardim Sao Dimas - São José dos Campos/SP - CEP: 12245-030</p>
+        <p>Fundada em 23/09/2020 | © 2026 Todos os direitos reservados.</p>
+    </div>
+</footer>
+
+
+</body></html>
